@@ -5,7 +5,8 @@ import pandas as pd
 from sklearn.preprocessing import StandardScaler
 from urllib.request import urlopen
 
-app = Flask(__name__)
+application = Flask(__name__)
+app = application
 
 ## import ridge model and stadndard scaler pickel file
 ridge_model = pickle.load(open("models/algerian_ridge.pkl","rb"))
